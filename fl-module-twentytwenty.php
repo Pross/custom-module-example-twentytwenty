@@ -10,7 +10,10 @@
 class TwentyTwentyExamplePlugin {
 
 	public static function init() {
-		require_once 'modules/twentytwenty/twentytwenty.php';
+
+		if( class_exists( 'FLBuilder' ) ) {
+			require_once 'modules/twentytwenty/twentytwenty.php';
+		}
 	}
 }
 add_action( 'init', array( 'TwentyTwentyExamplePlugin', 'init' ) );
