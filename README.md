@@ -9,7 +9,9 @@ In this tutorial I'm going to show you how to create a module plugin for Beaver 
 
 # Creating the plugin.
 Navigate to your WP plugins folder, typically `wp-content/plugins/` and create a new folder `custom-module-example-twentytwenty`.
+
 For WP to recognise the plugin correctly we need a main plugin file with the WP plugin headers.
+
 Create a file called `fl-module-twentytwenty.php` in your new plugin folder with the following:
 
 ```
@@ -25,6 +27,7 @@ Create a file called `fl-module-twentytwenty.php` in your new plugin folder with
 ```
 
 This is the information WP uses on the plugins admin screen to show the name, description and version information.
+
 Underneath this we will add the main plugin class which will load the module file.
 
 ```
@@ -69,11 +72,15 @@ class TwentyTwentyExampleModule extends FLBuilderModule {
 ```
 # Module Assets.
 Our jQuery plugin has 3 files and they need to be put in the right folders.
+
 In the module folder create two new folders, `css` and `js`.
+
 Move the twentytwenty css file and the js files into their respective folders.
 
 We can now add these assets to the module file so they get enqueued properly when the module is on the page.
+
 To do this you need to open the module file again and add the following into the `__construct` function.
+
 Your module file should now look something like this.
 ```
 <?php
@@ -111,6 +118,7 @@ class TwentyTwentyExampleModule extends FLBuilderModule {
 # Module options
 
 Our module will only have two options, one for each photo so lets add them now.
+
 Underneath the main module class we will use the `FLBuilder::register_module` method to register those two options.
 ```
 /**
@@ -148,6 +156,7 @@ FLBuilder::register_module( 'TwentyTwentyExampleModule', array(
 # Module frontend.php
 
 For any BeaverBuilder module to render it needs a `frontend.php` file, so create a new folder `includes` inside the module folder and create a new file `frontend.php` and add the following.
+
 ```
 <?php
 
@@ -170,12 +179,15 @@ For any BeaverBuilder module to render it needs a `frontend.php` file, so create
 </div>
 ```
 This will be the HTML outputted by the module when it is inserted into a layout.
+
 As you can see it simply creates a div with the two classes `fl-twenty-twenty twentytwenty-container` and includes the two images using the settings we previously registered.
+
 The jQuery plugin will do the rest.
 
 # Module frontend.js.php
 
 Now we need to add the jQuery snippet needed to make all this work.
+
 We use a `frontend.js.php` file in the includes folder with the following code.
 ```
 jQuery(function($) {
@@ -185,6 +197,7 @@ jQuery(function($) {
 
 # Conclusion
 We have created a WP plugin from scratch and added all the files needed to get a Beaver Builder module working.
+
 You should now be able to activate your new plugin in WP admin then add your new module to a page.
 
 # Resources
