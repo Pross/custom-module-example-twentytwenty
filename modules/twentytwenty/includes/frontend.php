@@ -7,7 +7,6 @@
  * $module An instance of your module class.
  * $settings The module's settings.
  *
- * Example:
  */
 
 ?>

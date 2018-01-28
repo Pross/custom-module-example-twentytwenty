@@ -1,5 +1,4 @@
 <?php
-
 /**
  * This is an example module that uses the TwentyTwenty jQuery plugin.
  *
@@ -13,8 +12,8 @@ class TwentyTwentyExampleModule extends FLBuilderModule {
 	public function __construct() {
 
 		parent::__construct(array(
-			'name'            => __( 'Basic Example', 'fl-builder' ),
-			'description'     => __( 'An basic example for coding new modules.', 'fl-builder' ),
+			'name'            => __( 'Twenty Twenty', 'fl-builder' ),
+			'description'     => __( 'An basic example module using jQuery TwentyTwenty.', 'fl-builder' ),
 			'category'        => __( 'Example Modules', 'fl-builder' ),
 			'dir'             => __DIR__,
 			'partial_refresh' => true,
