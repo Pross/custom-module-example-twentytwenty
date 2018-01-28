@@ -206,3 +206,5 @@ Jquery TwentyTwenty https://github.com/zurb/twentytwenty
 Custom module developer guide http://kb.wpbeaverbuilder.com/article/124-custom-module-developer-guide
 
 This module working example https://github.com/Pross/custom-module-example-twentytwenty
+
+BeaverBuilder KB tutorial https://kb.wpbeaverbuilder.com/article/578-create-a-module-plugin-with-a-jquery-plugin
