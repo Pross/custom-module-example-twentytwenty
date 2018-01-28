@@ -4,7 +4,7 @@ An example plugin thats demonstrates how to create a simple module for BeaverBui
 
 ![Module Demo](assets/module-demo.gif?raw=true)
 
-# INTRO
+# Introduction
 In this tutorial I'm going to show you how to create a module plugin for Beaver Builder using a 3rd party jQuery plugin.
 
 # Creating the plugin.
@@ -120,6 +120,7 @@ class TwentyTwentyExampleModule extends FLBuilderModule {
 Our module will only have two options, one for each photo so lets add them now.
 
 Underneath the main module class we will use the `FLBuilder::register_module` method to register those two options.
+
 ```
 /**
  * Register the module and its form settings.
