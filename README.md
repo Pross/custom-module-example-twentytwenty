@@ -1,11 +1,9 @@
-# Example BeaverBuilder module
-
-An example plugin thats demonstrates how to create a simple module for BeaverBuilder using a jQuery plugin.
-
-![Module Demo](assets/module-demo.gif?raw=true)
-
 # Introduction
 In this tutorial I'm going to show you how to create a module plugin for Beaver Builder using a 3rd party jQuery plugin.
+
+The jQuery plugin we are using will compare two images with a sliding bar, this could be useful where you need to compare two images with similar dimensions.
+
+![Module Demo](assets/module-demo.gif?raw=true)
 
 # Creating the plugin.
 Navigate to your WP plugins folder, typically `wp-content/plugins/` and create a new folder `custom-module-example-twentytwenty`.
