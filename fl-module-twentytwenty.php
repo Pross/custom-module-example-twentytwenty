@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Beaver Builder TwentyTwenty Module.
+ * Plugin Name: Beaver Builder TwentyTwenty Module
  * Plugin URI: http://www.wpbeaverbuilder.com
  * Description: An example plugin thats demonstrates how to create a simple module for BeaverBuilder using a jQuery plugin.
  * Version: 1.0
